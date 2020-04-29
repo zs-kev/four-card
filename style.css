@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  box-sizing: border-box;
+  font-size: 15px; }
+
+/* Poppins: font-family: 'Poppins', sans-serif */
+/* Primary */
+/* Neutral */
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6, p, span, li, label, input {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  h1.light, h2.light, h3.light, h4.light, h5.light, h6.light, p.light, span.light, li.light, label.light, input.light {
+    font-weight: 200; }
+  h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular, p.regular, span.regular, li.regular, label.regular, input.regular {
+    font-weight: 400; }
+  h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold, p.bold, span.bold, li.bold, label.bold, input.bold {
+    font-weight: 700; }
+
+/* Headings */
+h1, h2, h3 {
+  color: #4c4e61; }
+
+/* Paragraphs */
+p {
+  color: #a3a5ae; }
+
+.grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 320px);
+  grid-gap: 2.5em;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1111px) {
+    .grid-container {
+      grid-template: repeat(2, 1fr)/repeat(2, 320px); } }
+  @media only screen and (max-width: 700px) {
+    .grid-container {
+      grid-template: repeat(4, 1fr)/320px; } }
+
+header {
+  padding: 4.5rem 0;
+  text-align: center;
+  max-width: 34rem;
+  margin: 0 auto; }
+  @media only screen and (min-width: 700px) {
+    header {
+      padding-bottom: 3.5rem; } }
+  header h1 {
+    font-size: 1.6em;
+    padding-bottom: 0.8rem; }
+    @media only screen and (min-width: 700px) {
+      header h1 {
+        font-size: 2.5em; } }
+  header p {
+    line-height: 1.6rem; }
+
+.supervisor {
+  border-top: 3.5px solid #45d3d3; }
+  @media only screen and (min-width: 1112px) {
+    .supervisor {
+      grid-row-start: 1;
+      grid-row-end: 3; } }
+
+.team {
+  border-top: 3.5px solid #ea5353; }
+
+.karma {
+  border-top: 3.5px solid #fcaf4a; }
+  @media only screen and (min-width: 1112px) {
+    .karma {
+      grid-column-start: 2; } }
+
+.calc {
+  border-top: 3.5px solid #549ef2; }
+  @media only screen and (min-width: 1112px) {
+    .calc {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 3; } }
+
+.footer {
+  background-color: #fafafa; }
+  .footer footer {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3em; }
+    .footer footer a {
+      text-decoration: none;
+      color: #959ec6; }
+      .footer footer a:hover {
+        color: #4c4e61; }
+
+.cards .card {
+  -webkit-box-shadow: 0px 10px 10px 0px #d2d6e4;
+  -moz-box-shadow: 0px 10px 10px 0px #d2d6e4;
+  box-shadow: 0px 15px 20px 0px #d2d6e4;
+  border-radius: 5px;
+  width: 320px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 350px) {
+    .cards .card {
+      max-width: 280px; } }
+  .cards .card .card-container {
+    padding: 1.6rem; }
+    .cards .card .card-container h3 {
+      padding-bottom: 5px;
+      font-size: 1.5em; }
+    .cards .card .card-container .icon-container {
+      text-align: right;
+      padding-top: 2em; }
+      .cards .card .card-container .icon-container .icon {
+        width: 3rem; }
+        @media only screen and (min-width: 700px) {
+          .cards .card .card-container .icon-container .icon {
+            width: 4rem; } }
+
+main {
+  background-color: #fafafa; }
+  main .container {
+    width: 85%;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
