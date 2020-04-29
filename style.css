@@ -47,6 +47,10 @@ p {
     .grid-container {
       grid-template: repeat(4, 1fr)/320px; } }
 
+.card-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto); }
+
 header {
   padding: 4.5rem 0;
   text-align: center;
@@ -117,7 +121,7 @@ header {
       padding-bottom: 5px;
       font-size: 1.5em; }
     .cards .card .card-container .icon-container {
-      text-align: right;
+      justify-self: end;
       padding-top: 2em; }
       .cards .card .card-container .icon-container .icon {
         width: 3rem; }
