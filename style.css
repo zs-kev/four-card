@@ -104,33 +104,36 @@ header {
       .footer footer a:hover {
         color: #4c4e61; }
 
-.cards .card {
-  -webkit-box-shadow: 0px 10px 10px 0px #d2d6e4;
-  -moz-box-shadow: 0px 10px 10px 0px #d2d6e4;
-  box-shadow: 0px 15px 20px 0px #d2d6e4;
+.card {
+  -webkit-box-shadow: 0 12px 18px 0 #d7e1ed;
+  -moz-box-shadow: 0 12px 18px 0 #d7e1ed;
+  box-shadow: 0 12px 18px 0 #d7e1ed;
   border-radius: 5px;
   width: 320px;
   margin: 0 auto; }
   @media only screen and (max-width: 350px) {
-    .cards .card {
+    .card {
       max-width: 280px; } }
-  .cards .card .card-container {
+  .card .card-container {
     padding: 1.6rem; }
-    .cards .card .card-container h3 {
+    .card .card-container h3 {
       padding-bottom: 5px;
       font-size: 1.5em; }
-    .cards .card .card-container .icon-container {
+    .card .card-container p {
+      font-size: 0.875em; }
+    .card .card-container .icon-container {
       justify-self: end;
       padding-top: 2em; }
-      .cards .card .card-container .icon-container .icon {
+      .card .card-container .icon-container .icon {
         width: 3rem; }
         @media only screen and (min-width: 700px) {
-          .cards .card .card-container .icon-container .icon {
+          .card .card-container .icon-container .icon {
             width: 4rem; } }
 
 main {
-  background-color: #fafafa; }
-  main .container {
+  background-color: #fafafa;
+  min-height: 100vh; }
+  main .main-container {
     width: 85%;
     margin: 0 auto; }
 
